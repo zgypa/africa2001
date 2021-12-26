@@ -1,0 +1,5 @@
+h1 {color: red; font-size: x-large }
+h2 {color: pink; font-size: large; font-style: italic }
+body {background: black; color: #80c0c0; font-size: medium }
+P:first-letter {font-size: 100%; float: left}
+P:first-line {font-style: small-caps}
