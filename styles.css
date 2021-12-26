@@ -25,6 +25,10 @@ a {
     color: #d0d0d0;
 }
 
+.day_index {
+    font-size: larger;
+}
+
 
 /* P:first-letter {
     font-size: 100%;
