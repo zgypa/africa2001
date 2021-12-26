@@ -2,12 +2,21 @@
 
 INDEX="index.html"
 
-echo "<html><head><title>Africa Journal</title></head><body><table>" > $INDEX; 
+printf "
+<html>
+  <head>
+    <title>Africa Journal</title>
+    <link rel=\"STYLESHEET\" type=\"text/css\" href=\"styles.css\">
+  </head>
+<body>
+  <h1>Africa Journal</title>
+  <table>\n" >$INDEX
 
-for file in `ls *html`; 
- do 
-  echo "<tr><td>" >> $INDEX ; 
-  echo "<a href=\"./$file\">$file</a>" >> $INDEX; 
-  echo "</td></tr>" >> $INDEX; 
- done; 
-echo "</body></html>" >> $INDEX
+for file in $(find -name "day*.html"); do
+    {
+        printf "    <tr><td>"
+        printf "<a href=\"%s\">%s</a>" "$file" "$(basename $file .html)"
+        printf "</td></tr>\n"
+    } >>$INDEX
+done
+echo "</body></html>" >>$INDEX
