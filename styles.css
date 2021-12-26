@@ -1,5 +1,36 @@
-h1 {color: red; font-size: x-large }
-h2 {color: pink; font-size: large; font-style: italic }
-body {background: white; color: black; font-size: medium }
-P:first-letter {font-size: 100%; float: left}
-P:first-line {font-style: small-caps}
+h1 {
+    color: green;
+    font-size: x-large;
+    font-family: monospace;
+}
+
+h2 {
+    font-size: medium;
+    font-style: italic;
+    font-family: "Courier New", monospace;
+}
+
+body {
+    background: black;
+    color: #d0d0d0;
+    font-size: medium;
+    font-family: monospace;
+    margin: auto;
+    /* margin-right: 150px;
+    margin-left: 80px; */
+    width: 600px;
+}
+
+a {
+    color: #d0d0d0;
+}
+
+
+/* P:first-letter {
+    font-size: 100%;
+    float: left
+}
+
+P:first-line {
+    font-style: small-caps
+} */
